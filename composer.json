@@ -36,6 +36,9 @@
             "/example",
             "/docs",
             "/phpdoc.dist.xml",
+            "/.gitattributes",
+            "/.gitignore",
+            "/package.json",
             "/.github"
         ]
     }

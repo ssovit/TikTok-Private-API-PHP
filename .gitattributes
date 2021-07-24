@@ -2,3 +2,6 @@ example/    export-ignore
 .github/    export-ignore
 phpdoc.dist.xml export-ignore
 docs    export-ignore
+package.json    export-ignore
+.gitignore  export-ignore
+.gitattributes  export-ignore
