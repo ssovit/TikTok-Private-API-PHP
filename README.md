@@ -1,11 +1,18 @@
 # Unofficial TikTok Private API library for PHP
 API Wrapper for private API access
 
-# Installation via Composer
-`composer require ssovit/tiktok-private-api`
+# Installation
+Via composer `composer require ssovit/tiktok-private-api`
 
-# Looking for Watermark-less video API?
-It's available on monthly subscription. See below for plans and contact details.
+
+# How does this work?
+Monthly subscription of my private API server is required for this to function.
+See below.
+
+
+# Documentation
+
+https://ssovit.github.io/TikTok-Private-API-PHP/
 
 # Usage
 Follow examples in `/example` directory
@@ -68,8 +75,6 @@ $cache_engine=new MyCacheEngine();
 $api=new \Sovit\TikTokPrivate\Api(array(/* config array*/),$cache_engine);
 ```
 
-It's highly recommended to use `Rotating` Proxy service if you are making lots of requests in short interval of time. [Webshare.io Proxy Service](https://www.webshare.io/?referral_code=kv04mj5v4ubw) is good. *It's my referral link and I would get a bit from it*
-
 # Available methods
 - `getForYou` - Get trending feed `getForYou($maxCursor)`
 - `getUser` - Get profile data for TikTok User `getUser($username)`
@@ -80,7 +85,7 @@ It's highly recommended to use `Rotating` Proxy service if you are making lots o
 - `getMusicFeed` - Get music feed `getMusicFeed($music_id,$maxCursor)`
 - `getVideoByID` - Get video by ID `getVideoByID($video_id)`
 - `getVideoByUrl` - Get video by URL `getVideoByUrl($video_url)`
-
+- *not all methods are documented, will update when I am free*
 `$maxCursor` defaults to `0`, and is offset for results page. `maxCursor` for next page is exposed on current page call feed data.
 
 
@@ -91,6 +96,7 @@ It's highly recommended to use `Rotating` Proxy service if you are making lots o
 | **Mega** | 100 USD | 12,000 | ~360,000 |
 | **Ultra** | custom pricing | ? | ? |
 
+mail me at sovit.tamrakar@gmail.com or contact via telegram at https://t.me/ssovit for subscription info
 
 # Disclaimer
 TikTok is always updating their API endpoints but I will try to keep this library whenever possible. I take no responsibility if you or your IP gets banned using this API. It's recommended that you use proxy.
