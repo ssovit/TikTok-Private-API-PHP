@@ -13,12 +13,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetChallenge\u0028\u0029",
             "name": "getChallenge",
-            "summary": "Get\u0020Challenge\u0020detail\nAccepts\u0020challenge\u0020id\u0020and\u0020returns\u0020challenge\u0020detail\u0020object\u0020or\u0020false\u0020on\u0020failure",
+            "summary": "Get\u0020Challenge\u0020detail",
             "url": "classes/Sovit-TikTokPrivate-Api.html#method_getChallenge"
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetChallengeFeed\u0028\u0029",
             "name": "getChallengeFeed",
-            "summary": "Get\u0020Challenge\u0020Feed\nAccepts\u0020challenge\u0020id\u0020and\u0020returns\u0020challenge\u0020feed\u0020object\u0020or\u0020false\u0020on\u0020faliure",
+            "summary": "Get\u0020Challenge\u0020Feed",
             "url": "classes/Sovit-TikTokPrivate-Api.html#method_getChallengeFeed"
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetChallengeID\u0028\u0029",
@@ -33,27 +33,27 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetForYou\u0028\u0029",
             "name": "getForYou",
-            "summary": "Trending\u0020Feed\nReturns\u0020trending\u0020video\u0020feed\u0020object\u0020or\u0020false\u0020on\u0020failure",
+            "summary": "Trending\u0020Feed",
             "url": "classes/Sovit-TikTokPrivate-Api.html#method_getForYou"
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetMusic\u0028\u0029",
             "name": "getMusic",
-            "summary": "Get\u0020Music\u0020detail\nAccepts\u0020music\u0020ID\u0020and\u0020returns\u0020music\u0020detail\u0020object\u0020or\u0020false\u0020on\u0020failure",
+            "summary": "Get\u0020Music\u0020detail",
             "url": "classes/Sovit-TikTokPrivate-Api.html#method_getMusic"
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetMusicFeed\u0028\u0029",
             "name": "getMusicFeed",
-            "summary": "Get\u0020music\u0020feed\nAccepts\u0020music\u0020id\u0020and\u0020returns\u0020music\u0020feed\u0020object\u0020or\u0020false\u0020on\u0020failure",
+            "summary": "Get\u0020music\u0020feed",
             "url": "classes/Sovit-TikTokPrivate-Api.html#method_getMusicFeed"
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetUser\u0028\u0029",
             "name": "getUser",
-            "summary": "Get\u0020User\u0020detail\nAccepts\u0020tiktok\u0020user_id\u0020and\u0020returns\u0020user\u0020detail\u0020object\u0020or\u0020false\u0020on\u0020failure",
+            "summary": "Get\u0020User\u0020detail",
             "url": "classes/Sovit-TikTokPrivate-Api.html#method_getUser"
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetUserFeed\u0028\u0029",
             "name": "getUserFeed",
-            "summary": "Get\u0020user\u0020feed\nAccepts\u0020user\u0020id\u0020and\u0020\u0024maxCursor\u0020pagination\u0020offset\u0020and\u0020returns\u0020user\u0020video\u0020feed\u0020object\u0020or\u0020false\u0020on\u0020failure",
+            "summary": "Get\u0020user\u0020feed",
             "url": "classes/Sovit-TikTokPrivate-Api.html#method_getUserFeed"
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetUserFollowers\u0028\u0029",
@@ -73,7 +73,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetVideoByID\u0028\u0029",
             "name": "getVideoByID",
-            "summary": "Get\u0020video\u0020by\u0020video\u0020id\nAccept\u0020video\u0020ID\u0020and\u0020returns\u0020video\u0020detail\u0020object\u0020or\u0020false\u0020on\u0020failure",
+            "summary": "Get\u0020video\u0020by\u0020video\u0020id",
             "url": "classes/Sovit-TikTokPrivate-Api.html#method_getVideoByID"
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetVideoByUrl\u0028\u0029",
@@ -98,7 +98,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003Afailure\u0028\u0029",
             "name": "failure",
-            "summary": "Failure\nBe\u0020a\u0020man\u0020and\u0020accept\u0020the\u0020failure\nAttempt\u0020to\u0020clear\u0020coooies",
+            "summary": "Failure",
             "url": "classes/Sovit-TikTokPrivate-Api.html#method_failure"
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AfinalUrl\u0028\u0029",
@@ -108,7 +108,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003Aremote_call\u0028\u0029",
             "name": "remote_call",
-            "summary": "Make\u0020remote\u0020call\nPrivate\u0020method\u0020that\u0020will\u0020make\u0020remote\u0020HTTP\u0020requests,\u0020parse\u0020result\u0020as\u0020JSON\u0020if\u0020\u0024isJson\u0020is\u0020set\u0020to\u0020true\nreturns\u0020false\u0020on\u0020failure",
+            "summary": "Make\u0020remote\u0020call",
             "url": "classes/Sovit-TikTokPrivate-Api.html#method_remote_call"
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003A\u0024api_base",

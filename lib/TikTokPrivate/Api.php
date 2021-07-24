@@ -81,7 +81,6 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
 
         /**
          * Get Challenge detail
-         * Accepts challenge id and returns challenge detail object or false on failure
          *
          * @param string $challenge_id Challenge ID
          * @return object|false Returns object or false on failure
@@ -115,7 +114,6 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
 
         /**
          * Get Challenge Feed
-         * Accepts challenge id and returns challenge feed object or false on faliure
          *
          * @param string $challenge_id Challenge ID
          * @param integer $cursor Offset Cursor
@@ -211,7 +209,6 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
 
         /**
          * Trending Feed
-         * Returns trending video feed object or false on failure
          *
          * @return object|false Returns object or false on failure
          */
@@ -239,7 +236,6 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
 
         /**
          * Get Music detail
-         * Accepts music ID and returns music detail object or false on failure
          *
          * @param string $music_id Music ID
          * @return object|false Returns object or false on failure
@@ -270,7 +266,6 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
 
         /**
          * Get music feed
-         * Accepts music id and returns music feed object or false on failure
          *
          * @param string $music_id Music ID
          * @param int $cursor Offset Cursor
@@ -304,7 +299,6 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
 
         /**
          * Get User detail
-         * Accepts tiktok user_id and returns user detail object or false on failure
          *
          * @param string $user_id User ID
          * @return object|false Returns object or false on failure
@@ -335,7 +329,6 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
 
         /**
          * Get user feed
-         * Accepts user id and $maxCursor pagination offset and returns user video feed object or false on failure
          *
          * @param string $user_id User ID
          * @param integer $cursor Offset Cursor
@@ -465,7 +458,6 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
 
         /**
          * Get video by video id
-         * Accept video ID and returns video detail object or false on failure
          *
          * @param string $video_id Video ID
          * @return object|false Returns object or false on failure
@@ -588,7 +580,9 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
 
         /**
          * Failure
-         * Be a man and accept the failure
+         * 
+         * Be a man and accept the failure.
+         * 
          * Attempt to clear coooies
          *
          * @return false Returns false
@@ -626,8 +620,6 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
 
         /**
          * Make remote call
-         * Private method that will make remote HTTP requests, parse result as JSON if $isJson is set to true
-         * returns false on failure
          *
          * @param string $path Remote path
          * @param array $params Parameters
@@ -637,7 +629,6 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
         {
             $this->checkAPIKey();
             $params['key'] = $this->_config['api_key'];
-
             try {
                 $client = new Client();
 
@@ -646,7 +637,6 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
                     'verify' => false,
                 ]);
                 $result = json_decode($response->getBody(), false);
-
                 $response = $client->get($result->url, [
                     "headers" => (array) $result->headers,
                     "cookies" => new \GuzzleHttp\Cookie\FileCookieJar($this->_config['cookie_file']),
