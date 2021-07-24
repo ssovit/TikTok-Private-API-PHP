@@ -1,0 +1,42 @@
+{
+    "name": "ssovit/tiktok-private-api",
+    "description": "Unofficial TikTok Private API for PHP",
+    "license": "MIT",
+    "homepage": "https://github.com/ssovit/tiktok-private-api",
+    "keywords": [
+        "tiktok",
+        "tiktok-api",
+        "tiktok-app-api",
+        "tiktok-scraper"
+    ],
+    "authors": [
+        {
+            "name": "Sovit Tamrakar",
+            "email": "sovit.tamrakar@gmail.com",
+            "homepage": "https://github.com/ssovit/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/ssovit/tiktok-private-api",
+        "issues": "https://github.com/ssovit/tiktok-private-api/issues",
+        "email": "sovit.tamrakar@gmail.com"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sovit\\": "lib"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.5 || ^7.0"
+    },
+    "type": "library",
+    "archive": {
+        "exclude": [
+            "/example",
+            "/docs",
+            "/phpdoc.dist.xml",
+            "/.github"
+        ]
+    }
+}

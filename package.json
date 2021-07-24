@@ -1,0 +1,22 @@
+{
+  "name": "tiktok-private-api",
+  "version": "1.0.0",
+  "description": "Unofficial TikTok APP API for PHP",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WPPress/tiktok-private-api.git"
+  },
+  "author": "WPPress",
+  "license": "MIT",
+  "bugs": {
+    "url": "htthttps://github.com/WPPress/tiktok-private-api/issues"
+  },
+  "homepage": "https://github.com/WPPress/tiktok-private-api#readme"
+}
