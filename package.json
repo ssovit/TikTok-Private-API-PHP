@@ -1,6 +1,6 @@
 {
   "name": "tiktok-private-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unofficial TikTok APP API for PHP",
   "main": "index.js",
   "directories": {

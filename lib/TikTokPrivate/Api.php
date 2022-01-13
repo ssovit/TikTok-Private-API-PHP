@@ -636,9 +636,9 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
                     "query"  => $params,
                     'verify' => false,
                 ]);
-                $result = json_decode($response->getBody(), false);
-                $response = $client->get($result->url, [
-                    "headers" => (array) $result->headers,
+                $result = json_decode($response->getBody(), true);
+                $response = $client->get($result['url'], [
+                    "headers" => $result['headers'],
                     "cookies" => new \GuzzleHttp\Cookie\FileCookieJar($this->_config['cookie_file']),
                     "proxy"   => $this->_config['proxy'],
                     'verify'  => false,
