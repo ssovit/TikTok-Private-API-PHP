@@ -19,7 +19,7 @@ jobs:
 
       - name: Run phpdoc
         run: |
-          docker run --rm -v $(pwd):/data phpdoc/phpdoc:3 -d ./Src -t ./Docs
+          docker run --rm -v $(pwd):/data phpdoc/phpdoc:3 -d ./lib -t ./docs
 
       - name: git commit
         run: |
