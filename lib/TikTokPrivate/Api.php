@@ -16,8 +16,7 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
          *
          * @var string
          */
-        protected $api_base = "http://localhost:5000";
-        //protected $api_base = "https://api-3.wppress.net";
+        protected $api_base = "https://api-3.wppress.net";
 
         /**
          * Config
@@ -181,7 +180,7 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
          *
          * @param string $video_id Video ID
          * @param integer $cursor Offset Cursor
-         * @return string|false Returns object or false on failure
+         * @return object|false Returns object or false on failure
          */
         public function getComments($video_id, $cursor = 0)
         {
