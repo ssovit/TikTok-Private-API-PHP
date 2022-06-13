@@ -16,7 +16,8 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
          *
          * @var string
          */
-        protected $api_base = "https://api-3.wppress.net";
+        protected $api_base = "http://localhost:5000";
+        //protected $api_base = "https://api-3.wppress.net";
 
         /**
          * Config
@@ -66,9 +67,7 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
             /**
              * Initialize the config array
              */
-            $this->_config = array_merge([
-                'cookie_file' => sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'tiktok.json',
-            ], $this->defaults, $config);
+            $this->_config = array_merge([], $this->defaults, $config);
 
             /**
              * If Cache Engine is enabled
@@ -102,7 +101,7 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
             $result = $this->remote_call("challenge/" . $challenge_id);
             if (isset($result->ch_info)) {
                 if (true === $this->_config['transform_result']) {
-                    $result = Transform::Challenge($result);
+                    $result = Transform::Challenge($result->ch_info);
                 }
                 if ($this->cacheEnabled) {
                     $this->cacheEngine->set($cacheKey, $result, $this->_config['cache_timeout']);
@@ -254,7 +253,7 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
             $result = $this->remote_call("music/" . $music_id);
             if (isset($result->music_info)) {
                 if (true === $this->_config['transform_result']) {
-                    $result = Transform::Music($result);
+                    $result = Transform::Music($result->music_info);
                 }
                 if ($this->cacheEnabled) {
                     $this->cacheEngine->set($cacheKey, $result, $this->_config['cache_timeout']);
@@ -296,14 +295,24 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
             }
             return $this->failure();
         }
+        /**
+         * Get user detail by username
+         *
+         * @param  string $username
+         * @return object|false Returns object or false on failure
+         */
+        function getUser($username)
+        {
+            return $this->getUserFromSearch($username);
+        }
 
         /**
-         * Get User detail
+         * Get User detail by ID
          *
          * @param string $user_id User ID
          * @return object|false Returns object or false on failure
          */
-        public function getUser($user_id)
+        public function getUserByID($user_id)
         {
             if (empty($user_id)) {
                 throw new \Exception("Invalid Username");
@@ -317,7 +326,7 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
             $result = $this->remote_call("user/{$user_id}");
             if (isset($result->user)) {
                 if (true === $this->_config['transform_result']) {
-                    $result = Transform::User($result);
+                    $result = Transform::User($result->user);
                 }
                 if ($this->cacheEnabled) {
                     $this->cacheEngine->set($cacheKey, $result, $this->_config['cache_timeout']);
@@ -325,6 +334,32 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
                 return $result;
             }
             return $this->failure();
+        }
+        /**
+         * Get user detail from search by username as keyword
+         *
+         * @param  string $username
+         * @return object|false Returns object or false on failure
+         */
+        public function getUserFromSearch($username)
+        {
+            if (empty($username)) {
+                throw new \Exception("Invalid Username");
+            }
+            $search = $this->searchUser($username);
+            if ($search !== false  && !empty($search->user_list)) {
+                $result = Util::find($search->user_list, function ($item) use ($username) {
+                    return $item->user_info->unique_id === $username;
+                });
+                if ($result) {
+                    $result = $result->user_info;
+                    if (true === $this->_config['transform_result']) {
+                        $result = Transform::User($result);
+                    }
+                    return $result;
+                }
+                return $this->failure();
+            }
         }
 
         /**
@@ -583,13 +618,12 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
          * 
          * Be a man and accept the failure.
          * 
-         * Attempt to clear coooies
          *
          * @return false Returns false
          */
         private function failure()
         {
-            @unlink($this->_config['cookie_file']);
+            //\error_log("Something went wrong");
             return false;
         }
 
@@ -605,13 +639,14 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
                 $client = new Client();
 
                 $result = $client->get($url, [
-                    'query'    => ['get' => 'params'],
+                    "headers"=>["user-agent"=>"okhttp"],
+                    "allow_redirects"=>["max"=>1],
                     'on_stats' => function (TransferStats $stats) use (&$url) {
                         $url = $stats->getEffectiveUri();
                     },
+                    'verify'  => false,
                     "proxy"    => $this->_config['proxy'],
                 ]);
-                $url = $result->getBody()->getContents();
                 return $url;
             } catch (\Exception $e) {
                 return $url;
@@ -639,7 +674,6 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
                 $result = json_decode($response->getBody(), true);
                 $response = $client->get($result['url'], [
                     "headers" => $result['headers'],
-                    "cookies" => new \GuzzleHttp\Cookie\FileCookieJar($this->_config['cookie_file']),
                     "proxy"   => $this->_config['proxy'],
                     'verify'  => false,
                 ]);

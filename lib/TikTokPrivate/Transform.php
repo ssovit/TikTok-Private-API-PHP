@@ -10,8 +10,7 @@ if (!\class_exists('\Sovit\TikTokPrivate\Transform')) {
          * @param obejct $data
          * @return object
          */
-        public static function Challenge($data) {
-            $challenge = $data->ch_info;
+        public static function Challenge($challenge) {
             $result    = [
                 'challenge' => [
                     'id'            => @$challenge->cid,
@@ -138,8 +137,7 @@ if (!\class_exists('\Sovit\TikTokPrivate\Transform')) {
          * @param object $data
          * @return object
          */
-        public static function Music($data) {
-            $music  = $data->music_info;
+        public static function Music($music) {
             $result = [
                 'music' => [
                     'id'          => @$music->mid,
@@ -166,8 +164,7 @@ if (!\class_exists('\Sovit\TikTokPrivate\Transform')) {
          * @param object $data
          * @return object
          */
-        public static function User($data) {
-            $user   = $data->user;
+        public static function User($user) {
             $result = [
                 'user'  => [
                     'id'               => @$user->uid,
@@ -189,6 +186,7 @@ if (!\class_exists('\Sovit\TikTokPrivate\Transform')) {
                     "category"         => @$user->category,
                     "twitter"          => @$user->twitter_id,
                     "youtubeChannelId" => @$user->youtube_channel_id,
+                    "instagramId" => @$user->ins_id,
                     'commentSetting'   => @true == $user->comment_setting,
                     'duetSetting'      => @true == $user->duet_setting,
                     'privateAccount'   => @true == $user->secret,
