@@ -22,7 +22,7 @@ $api=new \Sovit\TikTokPrivate\Api(array(/* config array*/));
 
 $trendingFeed=$api->getForYou($maxCursor=0);
 
-$userData=$api->getUser("USER_ID");
+$userData=$api->getUser("USERNAME");
 
 $userFeed=$api->getUserFeed("USER_ID",$maxCursor=0);
 
@@ -47,8 +47,7 @@ $videoData=$api->getVideoByUrl("https://www.tiktok.com/@zachking/video/682930357
 $api=new \Sovit\TikTokPrivate\Api(array(
 	"proxy"		=> '', // proxy in url format like http://username:password@host:port
 	"cache_timeout"		=> 3600 // 1 hours cache timeout
-	"cookie_file"		=> sys_get_temp_dir() . 'tiktok.json', // cookie file path
-	"transform_result"		=> true, // false if you want to get json without transforming it to more readable json dict
+	"transform_result"		=> true, // false if you want to get json without transforming it to more readable JSON structure
 	"api_key"		=> "API_KEY" // see below on how to get API key
 	), $cache_engine=false);
 ```
