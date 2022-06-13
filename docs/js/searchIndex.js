@@ -48,8 +48,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetUser\u0028\u0029",
             "name": "getUser",
-            "summary": "Get\u0020User\u0020detail",
+            "summary": "Get\u0020user\u0020detail\u0020by\u0020username",
             "url": "classes/Sovit-TikTokPrivate-Api.html#method_getUser"
+        },                {
+            "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetUserByID\u0028\u0029",
+            "name": "getUserByID",
+            "summary": "Get\u0020User\u0020detail\u0020by\u0020ID",
+            "url": "classes/Sovit-TikTokPrivate-Api.html#method_getUserByID"
+        },                {
+            "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetUserFromSearch\u0028\u0029",
+            "name": "getUserFromSearch",
+            "summary": "Get\u0020user\u0020detail\u0020from\u0020search\u0020by\u0020username\u0020as\u0020keyword",
+            "url": "classes/Sovit-TikTokPrivate-Api.html#method_getUserFromSearch"
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Api\u003A\u003AgetUserFeed\u0028\u0029",
             "name": "getUserFeed",
@@ -135,51 +145,6 @@ Search.appendIndex(
             "name": "defaults",
             "summary": "Default\u0020config",
             "url": "classes/Sovit-TikTokPrivate-Api.html#property_defaults"
-        },                {
-            "fqsen": "\\Sovit\\TikTokPrivate\\Stream",
-            "name": "Stream",
-            "summary": "",
-            "url": "classes/Sovit-TikTokPrivate-Stream.html"
-        },                {
-            "fqsen": "\\Sovit\\TikTokPrivate\\Stream\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Sovit-TikTokPrivate-Stream.html#method___construct"
-        },                {
-            "fqsen": "\\Sovit\\TikTokPrivate\\Stream\u003A\u003AbodyCallback\u0028\u0029",
-            "name": "bodyCallback",
-            "summary": "",
-            "url": "classes/Sovit-TikTokPrivate-Stream.html#method_bodyCallback"
-        },                {
-            "fqsen": "\\Sovit\\TikTokPrivate\\Stream\u003A\u003AheaderCallback\u0028\u0029",
-            "name": "headerCallback",
-            "summary": "",
-            "url": "classes/Sovit-TikTokPrivate-Stream.html#method_headerCallback"
-        },                {
-            "fqsen": "\\Sovit\\TikTokPrivate\\Stream\u003A\u003Astream\u0028\u0029",
-            "name": "stream",
-            "summary": "",
-            "url": "classes/Sovit-TikTokPrivate-Stream.html#method_stream"
-        },                {
-            "fqsen": "\\Sovit\\TikTokPrivate\\Stream\u003A\u003AsendHeader\u0028\u0029",
-            "name": "sendHeader",
-            "summary": "",
-            "url": "classes/Sovit-TikTokPrivate-Stream.html#method_sendHeader"
-        },                {
-            "fqsen": "\\Sovit\\TikTokPrivate\\Stream\u003A\u003A\u0024buffer_size",
-            "name": "buffer_size",
-            "summary": "",
-            "url": "classes/Sovit-TikTokPrivate-Stream.html#property_buffer_size"
-        },                {
-            "fqsen": "\\Sovit\\TikTokPrivate\\Stream\u003A\u003A\u0024headers",
-            "name": "headers",
-            "summary": "",
-            "url": "classes/Sovit-TikTokPrivate-Stream.html#property_headers"
-        },                {
-            "fqsen": "\\Sovit\\TikTokPrivate\\Stream\u003A\u003A\u0024headers_sent",
-            "name": "headers_sent",
-            "summary": "",
-            "url": "classes/Sovit-TikTokPrivate-Stream.html#property_headers_sent"
         },                {
             "fqsen": "\\Sovit\\TikTokPrivate\\Transform",
             "name": "Transform",
