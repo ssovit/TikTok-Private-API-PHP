@@ -51,7 +51,7 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
         private $defaults = [
             "proxy"            => null,
             "cache_timeout"    => 3600,
-            "transform_result" => true,
+            "transform_result" => false, // transform not recommended as tiktok json structure is always changing and can be broken at any time.
         ];
 
         /**
@@ -346,8 +346,8 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
                 throw new \Exception("Invalid Username");
             }
             $search = $this->searchUser($username);
-            if ($search !== false  && !empty($search->user_list)) {
-                $result = Util::find($search->user_list, function ($item) use ($username) {
+            if ($search !== false  && !empty($search->data) && isset($search->data[0]->user_list)) {
+                $result = Util::find($search->data[0]->user_list, function ($item) use ($username) {
                     return $item->user_info->unique_id === $username;
                 });
                 if ($result) {
@@ -591,7 +591,7 @@ if (!\class_exists('\Sovit\TikTokPrivate\Api')) {
             $result = $this->remote_call("search/user/" . $keyword, [
                 'maxCursor' => $cursor,
             ]);
-            if (isset($result->user_list)) {
+            if (isset($result->data[0]->user_list)) {
                 if ($this->cacheEnabled) {
                     $this->cacheEngine->set($cacheKey, $result, $this->_config['cache_timeout']);
                 }
