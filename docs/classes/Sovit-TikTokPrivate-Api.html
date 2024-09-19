@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,8 +53,8 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/sovit.html" class="">Sovit</a>
@@ -66,7 +67,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/TikTokAPI.html" class="">TikTokAPI</a>
@@ -74,21 +75,22 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/sovit.html">Sovit</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/sovit-tiktokprivate.html">TikTokPrivate</a></li>
     </ul>
@@ -108,6 +110,11 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
     :
@@ -119,12 +126,6 @@
 
 
 
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
 
 
 
@@ -133,207 +134,229 @@
 
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Sovit-TikTokPrivate-Api.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Sovit-TikTokPrivate-Api.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#property_api_base">$api_base</a>
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#property_api_base">$api_base</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd>API Base</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#property__config">$_config</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#property__config">$_config</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Config</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#property_cacheEnabled">$cacheEnabled</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#property_cacheEnabled">$cacheEnabled</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
 <dd>If Cache is enabled</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#property_cacheEngine">$cacheEngine</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#property_cacheEngine">$cacheEngine</a>
     <span>
                         &nbsp;: object            </span>
 </dt>
 <dd>Cache Engine</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#property_defaults">$defaults</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#property_defaults">$defaults</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Default config</dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method___construct">__construct()</a>
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Sovit-TikTokPrivate-Api.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Class Constructor</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getChallenge">getChallenge()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getChallenge">getChallenge()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Get Challenge detail</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getChallengeFeed">getChallengeFeed()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getChallengeFeed">getChallengeFeed()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Get Challenge Feed</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getChallengeID">getChallengeID()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getChallengeID">getChallengeID()</a>
     <span>
                                 &nbsp;: string|false    </span>
 </dt>
 <dd>Get Challenge ID By Challenge name</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getComments">getComments()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getComments">getComments()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Get video comments</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getForYou">getForYou()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getForYou">getForYou()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Trending Feed</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getMusic">getMusic()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getMusic">getMusic()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Get Music detail</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getMusicFeed">getMusicFeed()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getMusicFeed">getMusicFeed()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Get music feed</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getUser">getUser()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getUser">getUser()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Get user detail by username</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserByID">getUserByID()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getUserByID">getUserByID()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Get User detail by ID</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFeed">getUserFeed()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFeed">getUserFeed()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Get user feed</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFollowers">getUserFollowers()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFollowers">getUserFollowers()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Get User Followers</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFollowings">getUserFollowings()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFollowings">getUserFollowings()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Get User Followings</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFromSearch">getUserFromSearch()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFromSearch">getUserFromSearch()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Get user detail from search by username as keyword</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserID">getUserID()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getUserID">getUserID()</a>
     <span>
                                 &nbsp;: string|false    </span>
 </dt>
 <dd>Get user id by username</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getVideoByID">getVideoByID()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getVideoByID">getVideoByID()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Get video by video id</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_getVideoByUrl">getVideoByUrl()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_getVideoByUrl">getVideoByUrl()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Get Video by TikTok URL</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_searchChallenge">searchChallenge()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_searchChallenge">searchChallenge()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Search challenge by challenge name</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_searchUser">searchUser()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_searchUser">searchUser()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Search User by username</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_checkAPIKey">checkAPIKey()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_checkAPIKey">checkAPIKey()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Check if api key is provided</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_failure">failure()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_failure">failure()</a>
     <span>
                                 &nbsp;: false    </span>
 </dt>
 <dd>Failure</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_finalUrl">finalUrl()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_finalUrl">finalUrl()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get final redirect URL</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Sovit-TikTokPrivate-Api.html#method_remote_call">remote_call()</a>
+    <a class="" href="classes/Sovit-TikTokPrivate-Api.html#method_remote_call">remote_call()</a>
     <span>
                                 &nbsp;: object|false    </span>
 </dt>
 <dd>Make remote call</dd>
 
-        </dl>
+    </dl>
 
 
 
@@ -344,6 +367,7 @@
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/Sovit-TikTokPrivate-Api.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -355,6 +379,7 @@
     <h4 class="phpdocumentor-element__name" id="property_api_base">
         $api_base
         <a href="classes/Sovit-TikTokPrivate-Api.html#property_api_base" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -367,6 +392,7 @@
 
         <p class="phpdocumentor-summary">API Base</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
@@ -376,12 +402,8 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
+
+    
 
 </article>
                     <article
@@ -394,6 +416,7 @@
     <h4 class="phpdocumentor-element__name" id="property__config">
         $_config
         <a href="classes/Sovit-TikTokPrivate-Api.html#property__config" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -406,6 +429,7 @@
 
         <p class="phpdocumentor-summary">Config</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
@@ -415,12 +439,8 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
+
+    
 
 </article>
                     <article
@@ -433,6 +453,7 @@
     <h4 class="phpdocumentor-element__name" id="property_cacheEnabled">
         $cacheEnabled
         <a href="classes/Sovit-TikTokPrivate-Api.html#property_cacheEnabled" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -445,6 +466,7 @@
 
         <p class="phpdocumentor-summary">If Cache is enabled</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">bool</span>
@@ -454,12 +476,8 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
+
+    
 
 </article>
                     <article
@@ -472,6 +490,7 @@
     <h4 class="phpdocumentor-element__name" id="property_cacheEngine">
         $cacheEngine
         <a href="classes/Sovit-TikTokPrivate-Api.html#property_cacheEngine" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -484,6 +503,7 @@
 
         <p class="phpdocumentor-summary">Cache Engine</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">object</span>
@@ -493,12 +513,8 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
+
+    
 
 </article>
                     <article
@@ -511,6 +527,7 @@
     <h4 class="phpdocumentor-element__name" id="property_defaults">
         $defaults
         <a href="classes/Sovit-TikTokPrivate-Api.html#property_defaults" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -523,6 +540,7 @@
 
         <p class="phpdocumentor-summary">Default config</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
@@ -538,12 +556,8 @@
 
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
+
+    
 
 </article>
             </section>
@@ -552,6 +566,7 @@
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Sovit-TikTokPrivate-Api.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -562,6 +577,7 @@
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -576,6 +592,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">object|false&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cacheEngine</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -598,17 +617,9 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
+    
+
     
 </article>
                     <article
@@ -620,6 +631,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getChallenge">
         getChallenge()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getChallenge" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -634,6 +646,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getChallenge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$challenge_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -649,20 +664,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -673,6 +686,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getChallengeFeed">
         getChallengeFeed()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getChallengeFeed" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -687,6 +701,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getChallengeFeed</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$challenge_id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cursor</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -711,20 +728,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -735,6 +750,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getChallengeID">
         getChallengeID()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getChallengeID" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -749,6 +765,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getChallengeID</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$challenge_name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -764,20 +783,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns challenge ID or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns challenge ID or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -788,6 +805,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getComments">
         getComments()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getComments" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -802,6 +820,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getComments</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$video_id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cursor</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -826,20 +847,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -850,6 +869,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getForYou">
         getForYou()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getForYou" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -864,6 +884,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getForYou</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cursor</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -872,26 +895,23 @@
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -902,6 +922,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getMusic">
         getMusic()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getMusic" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -916,6 +937,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getMusic</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$music_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -931,20 +955,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -955,6 +977,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getMusicFeed">
         getMusicFeed()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getMusicFeed" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -969,6 +992,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getMusicFeed</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$music_id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cursor</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -993,20 +1019,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1017,6 +1041,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getUser">
         getUser()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getUser" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1031,6 +1056,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getUser</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$username</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1044,20 +1072,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1068,6 +1094,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getUserByID">
         getUserByID()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserByID" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1082,6 +1109,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getUserByID</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1097,20 +1127,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1121,6 +1149,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getUserFeed">
         getUserFeed()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFeed" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1135,6 +1164,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getUserFeed</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cursor</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1159,20 +1191,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1183,6 +1213,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getUserFollowers">
         getUserFollowers()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFollowers" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1197,6 +1228,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getUserFollowers</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cursor</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1221,20 +1255,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1245,6 +1277,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getUserFollowings">
         getUserFollowings()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFollowings" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1259,6 +1292,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getUserFollowings</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cursor</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1283,20 +1319,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1307,6 +1341,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getUserFromSearch">
         getUserFromSearch()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFromSearch" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1321,6 +1356,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getUserFromSearch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$username</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1334,20 +1372,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1358,6 +1394,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getUserID">
         getUserID()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserID" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1372,6 +1409,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getUserID</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$username</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1387,20 +1427,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns user ID or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns user ID or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1411,6 +1449,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getVideoByID">
         getVideoByID()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getVideoByID" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1425,6 +1464,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getVideoByID</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$video_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1440,20 +1482,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1464,6 +1504,7 @@
     <h4 class="phpdocumentor-element__name" id="method_getVideoByUrl">
         getVideoByUrl()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_getVideoByUrl" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1478,6 +1519,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getVideoByUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1493,20 +1537,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1517,6 +1559,7 @@
     <h4 class="phpdocumentor-element__name" id="method_searchChallenge">
         searchChallenge()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_searchChallenge" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1531,6 +1574,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">searchChallenge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keyword</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cursor</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1555,20 +1601,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1579,6 +1623,7 @@
     <h4 class="phpdocumentor-element__name" id="method_searchUser">
         searchUser()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_searchUser" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1593,6 +1638,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">searchUser</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keyword</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cursor</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1617,20 +1665,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1641,6 +1687,7 @@
     <h4 class="phpdocumentor-element__name" id="method_checkAPIKey">
         checkAPIKey()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_checkAPIKey" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1655,20 +1702,15 @@
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">checkAPIKey</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
+    
+
     
 </article>
                     <article
@@ -1680,6 +1722,7 @@
     <h4 class="phpdocumentor-element__name" id="method_failure">
         failure()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_failure" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1694,25 +1737,26 @@
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">failure</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <section class="phpdocumentor-description"><p>Be a man and accept the failure.</p>
 </section>
 
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns false</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns false</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1723,6 +1767,7 @@
     <h4 class="phpdocumentor-element__name" id="method_finalUrl">
         finalUrl()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_finalUrl" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1737,6 +1782,9 @@
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">finalUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1752,20 +1800,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns final redirect url</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns final redirect url</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1776,6 +1822,7 @@
     <h4 class="phpdocumentor-element__name" id="method_remote_call">
         remote_call()
         <a href="classes/Sovit-TikTokPrivate-Api.html#method_remote_call" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/TikTokPrivate/Api.php"><a href="files/lib-tiktokprivate-api.html"><abbr title="lib/TikTokPrivate/Api.php">Api.php</abbr></a></abbr>
@@ -1790,6 +1837,9 @@
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">remote_call</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1814,20 +1864,18 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">object|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
-</section>
 
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns object or false on failure</p>
+</section>
+
+            </section>
+
 </article>
             </section>
 
@@ -1924,7 +1972,66 @@
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/Sovit-TikTokPrivate-Api.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Sovit-TikTokPrivate-Api.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#property_api_base">$api_base</a></li>
+                                                    <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#property__config">$_config</a></li>
+                                                    <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#property_cacheEnabled">$cacheEnabled</a></li>
+                                                    <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#property_cacheEngine">$cacheEngine</a></li>
+                                                    <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#property_defaults">$defaults</a></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getChallenge">getChallenge()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getChallengeFeed">getChallengeFeed()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getChallengeID">getChallengeID()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getComments">getComments()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getForYou">getForYou()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getMusic">getMusic()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getMusicFeed">getMusicFeed()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getUser">getUser()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserByID">getUserByID()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFeed">getUserFeed()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFollowers">getUserFollowers()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFollowings">getUserFollowings()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserFromSearch">getUserFromSearch()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getUserID">getUserID()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getVideoByID">getVideoByID()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_getVideoByUrl">getVideoByUrl()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_searchChallenge">searchChallenge()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_searchUser">searchUser()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_checkAPIKey">checkAPIKey()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_failure">failure()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_finalUrl">finalUrl()</a></li>
+                                            <li class=""><a href="classes/Sovit-TikTokPrivate-Api.html#method_remote_call">remote_call()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -1935,7 +2042,6 @@
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Sovit-TikTokPrivate-Api.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
