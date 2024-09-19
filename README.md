@@ -89,13 +89,4 @@ $api=new \Sovit\TikTokPrivate\Api(array(/* config array*/),$cache_engine);
 
 
 ## Pirvate API server subscription pricing
-| Package | Cost(per month) | Quota(requests per day) | Quota (requests per month) |
-| ------- | :---------------: | --------------: | -----------------: |
-| **Pro** *(popular)* | 50 USD | 5,000 | ~150,000 |
-| **Mega** | 100 USD | 12,000 | ~360,000 |
-| **Ultra** | custom pricing | ? | ? |
-
-mail me at sovit.tamrakar@gmail.com or contact via telegram at https://t.me/ssovit for subscription info
-
-# Disclaimer
-TikTok is always updating their API endpoints but I will try to keep this library whenever possible. I take no responsibility if you or your IP gets banned using this API. It's recommended that you use proxy.
+*No Longer Available*
